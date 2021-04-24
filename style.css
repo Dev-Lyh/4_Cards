@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #fafafa;
+}
+.text{
+    margin-top: 60px;
+    text-align: center;
+}
+.t-lighter{
+    font-weight: 200;
+    color: #4c4e61;
+}
+.t-bold{
+    font-weight: 600;
+    color: #4c4e61;
+}
+.p-regular{
+    font-weight: 400;
+    color: #a3a5ae;
+}
+.d-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns:repeat(17, 40px);
+    grid-template-rows:repeat(9, 40px);
+
+    grid-gap: 35px;
+}
+.container .one{
+    background: #ffffff;
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    box-shadow: 0px 10px 15px #a3a5ae;
+    border-radius: 5px;
+    border-top: 4px solid #ea5353;
+}
+.t-builder{
+    color: #4c4e61;
+
+}
+.container .two{
+    background: white;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    grid-column-start: 7;
+    grid-column-end: 12;
+    box-shadow: 0px 10px 15px #a3a5ae;
+    border-radius: 5px;
+    border-top: 4px solid #fcaf4a;
+}
+.container .three{
+    background: white;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    box-shadow: 0px 10px 15px #a3a3a3;
+    border-radius: 5px;
+    border-top: 4px solid #45d3d3;
+}
+.container .four{
+    background: white;
+    grid-column-start: 12;
+    grid-column-end: 17;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    box-shadow: 0px 10px 15px #a3a5ae;
+    border-radius: 5px;
+    border-top: 4px solid #549ef2;
+}
+
+
+/*#region Pre-Config*/
+h2{
+    margin-left: 30px;
+    margin-top: 30px;
+    color: #4c4e61;
+}
+.one p{
+    color: #a3a5ae;
+    margin-left: 30px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.two p{
+    color: #a3a5ae;
+    margin-left: 30px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.three p{
+    color: #a3a5ae;
+    margin-left: 30px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.four p{
+    color: #a3a5ae;
+    margin-left: 30px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.one .img-builder{
+    width: 70px;
+    margin-top: 40px;
+    margin-left: 240px;
+    height: 70px;
+}
+.two .img-karma{
+    width: 70px;
+    height: 70px;
+    margin-top: 40px;
+    margin-left: 240px;
+}
+.three .img-supervisor{
+    width: 70px;
+    height: 70px;
+    margin-top: 40px;
+    margin-left: 240px;
+}
+.four .img-calculator{
+    width: 70px;
+    height: 70px;
+    margin-top: 40px;
+    margin-left: 240px;
+}
+
+.margin{
+    height: 0px;
+}
+/*#endregion*/
+
+
+/*#region MEDIA QUERY*/
+
+@media screen and (min-width: 375px)and (max-width: 900px){
+
+    h1{
+        font-size: 22pt;
+    }
+    p{
+        font-size: 14pt;
+    }
+
+    .text{
+        margin-top: 60px;
+        text-align: center;
+
+        width: 100vw;
+    }
+    .d-container{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns:repeat(17, 40px);
+        grid-template-rows:repeat(11, 40px);
+
+        grid-gap: 35px;
+        width: 100vw;
+        height: 100vh;
+    }
+    .container .one{
+        background: #ffffff;
+        grid-column-start: 7;
+        grid-column-end: 12;
+        grid-row-start: 5;
+        grid-row-end: 9;
+        box-shadow: 0px 10px 15px #a3a5ae;
+        border-radius: 5px;
+        border-top: 4px solid #ea5353;
+    }
+    .container .two{
+        background: white;
+        grid-row-start: 9;
+        grid-row-end: 13;
+        grid-column-start: 7;
+        grid-column-end: 12;
+        box-shadow: 0px 10px 15px #a3a5ae;
+        border-radius: 5px;
+        border-top: 4px solid #fcaf4a;
+    }
+    .container .three{
+        background: white;
+        grid-column-start: 7;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        box-shadow: 0px 10px 15px #a3a3a3;
+        border-radius: 5px;
+        border-top: 4px solid #45d3d3;
+    }
+    .container .four{
+        background: white;
+        grid-column-start: 7;
+        grid-column-end: 12;
+        grid-row-start: 13;
+        grid-row-end: 17;
+        box-shadow: 0px 10px 15px #a3a5ae;
+        border-radius: 5px;
+        border-top: 4px solid #549ef2;
+    }
+
+    .margin{
+        height: 600px;
+    }
+}
